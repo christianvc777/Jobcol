@@ -1,4 +1,3 @@
-// p5-filters.jsx
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import Button from './Button'; // Asegúrate de importar el componente Button
@@ -31,11 +30,11 @@ const Filters = () => {
 };
 
 const handleCategoryClick = () => {
-  //navigation.navigate('P6Screen');
+  console.log('Category clicked');
 };
 
 const handleNearbyClick = () => {
-  //navigation.navigate('P6Screen');
+  console.log('Nearby clicked');
 };
 
 const styles = StyleSheet.create({

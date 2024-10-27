@@ -5,7 +5,8 @@ import SearchBar from './SearchBar';
 import JobItem from './JobItem';
 import Footer from './Footer';
 
-const P6Screen = () => {
+
+const P6Screen = ({}) => {
   return (
     <View style={styles.view1}>
       <Header />

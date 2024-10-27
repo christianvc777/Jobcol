@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 const LoginForm = ({ onEmployeePress, onEmployerPress }) => {
   return (
     <View style={styles.formContainer}>
-      <Text style={styles.headerText}>Iniciar sesión</Text>
+      <Text style={styles.orText}>Iniciar Sesión</Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={onEmployeePress}>
           <Text style={styles.buttonText}>Empleado</Text>

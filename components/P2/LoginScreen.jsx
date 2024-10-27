@@ -6,11 +6,11 @@ import Footer from './Footer';
 
 const LoginScreen = ({ navigation }) => {
   const handleEmployeePress = () => {
-    //navigation.navigate('P3LoginScreen');
+    navigation.navigate('P3LoginScreen'); // Navega a P3LoginScreen
   };
 
   const handleEmployerPress = () => {
-    //navigation.navigate('P3LoginScreen');
+    navigation.navigate('P3LoginScreen'); // Navega a P3LoginScreen
   };
 
   return (
@@ -21,6 +21,11 @@ const LoginScreen = ({ navigation }) => {
           resizeMode="contain"
           source={{ uri: "https://cdn.builder.io/api/v1/image/assets/TEMP/a99437d73bf9e8c9a2c8c90a165b3e78ad214a5639a8919eb7fccdbb9dc6ab8d?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e" }}
           style={styles.logo}
+        />
+        <Image
+          resizeMode="contain"
+          source={{ uri: "https://cdn.builder.io/api/v1/image/assets/TEMP/2cf0b2b4a52ea6653e8f6b543ed91e223c633c6cac0289f9c87f3bddabc79fa0?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e" }}
+          style={styles.title}
         />
         <LoginForm onEmployeePress={handleEmployeePress} onEmployerPress={handleEmployerPress} />
         <TouchableOpacity style={styles.createAccountButton}>
@@ -52,6 +57,11 @@ const styles = StyleSheet.create({
     width: 209,
     aspectRatio: 1.03,
     marginTop: 20,
+  },
+  title: {
+    width: 210,
+    aspectRatio: 2.31,
+    marginTop: 8,
   },
   createAccountButton: {
     marginTop: 110,

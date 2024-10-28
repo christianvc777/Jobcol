@@ -6,6 +6,9 @@ import Button from './Button'; // Importar el componente Button
 const JobItem = () => {
   return (
     <>
+      <View style={styles.view7}>
+        <Text style={styles.text}>Buscar por:</Text>
+      </View>
       <View style={styles.view8}>
         <Text style={styles.text}>Trabajos cercanos</Text>
       </View>
@@ -86,7 +89,16 @@ const JobItem = () => {
 };
 
 const styles = StyleSheet.create({
-  
+  view7: {
+    color: "rgba(255, 255, 255, 1)",
+    fontSize: 18,
+    fontFamily: "System",
+    fontWeight: "400",
+    marginTop: 10,
+    marginLeft: -110,
+    alignItems: "center", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
+  },
   view8: {
     color: "rgba(255, 255, 255, 1)",
     fontSize: 15,

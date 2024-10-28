@@ -1,3 +1,4 @@
+// Header.jsx
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
@@ -37,25 +38,25 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
     display: "flex",
     alignItems: "stretch",
-    gap: 20,
-    justifyContent: "space-between",
+    gap: 1,
+    justifyContent: "center",
   },
   image1: {
     position: "relative",
     display: "flex",
     width: 135,
-    flexShrink: "0",
+    flexShrink: 0,
     maxWidth: "100%",
-    aspectRatio: "2.04",
+    aspectRatio: 2.04, // Cambiado a número
   },
   image2: {
     position: "relative",
     display: "flex",
-    marginTop: "auto",
+    marginTop: -40,
     marginBottom: "auto",
     width: 26,
-    flexShrink: "0",
-    aspectRatio: "0.96",
+    flexShrink: 0,
+    aspectRatio: 0.96, // Cambiado a número
   },
 });
 

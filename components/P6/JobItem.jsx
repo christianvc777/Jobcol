@@ -1,26 +1,36 @@
+// JobItem.jsx
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
+import Button from './Button'; // Importar el componente Button
 
 const JobItem = () => {
   return (
     <>
       <View style={styles.view7}>
-        <Text>Buscar por:</Text>
+        <Text style={styles.text}>Buscar por:</Text>
       </View>
       <View style={styles.view8}>
-        <Text>Ubicación actual:</Text>
+        <Text style={styles.text}>Ubicación actual:</Text>
       </View>
-      <View style={styles.view9} />
+      <View style={styles.view9}>
+        <Image
+          resizeMode="contain"
+          source={{
+            uri: "https://i.ibb.co/3Fs0ShH/Captura-de-pantalla-2024-10-27-202306.png",
+          }}
+          style={styles.imageCenter}
+        />
+      </View>
       <View style={styles.view10}>
         <Image
           resizeMode="contain"
           source={{
-            uri: "https://cdn.builder.io/api/v1/image/assets/TEMP/97cc6e39e9e935e2456a874cd983d580f7b3557032578960f0832654979b4362?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e",
+            uri: "https://cdn.builder.io/api/v1/image/assets/TEMP/97cc6e39e9e935e2456a874cd983d580f7b3557032578960f0832654979b4362?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7",
           }}
           style={styles.image4}
         />
         <View style={styles.view11}>
-          <Text>Restaurante Sabor</Text>
+          <Text style={styles.text}>Restaurante Sabor</Text>
         </View>
       </View>
       <View style={styles.view12}>
@@ -32,14 +42,12 @@ const JobItem = () => {
           style={styles.image5}
         />
         <View style={styles.view13}>
-          <Text>
-            Pago: Salario Minimo <br />
-            Barrio: Villa de los alpes
-            <br />
-            Lugar: Restaurante <br />
-            Contacto: 300 000 1001
-            <br />
-            Direccion: Cra 80 -34 sur{" "}
+          <Text style={styles.text}>
+            Pago: Salario Minimo {"\n"}
+            Barrio: Villa de los alpes {"\n"}
+            Lugar: Restaurante {"\n"}
+            Contacto: 300 000 1001 {"\n"}
+            Direccion: Cra 80 -34 sur
           </Text>
         </View>
       </View>
@@ -52,7 +60,7 @@ const JobItem = () => {
           style={styles.image6}
         />
         <View>
-          <Text>Doña Luz</Text>
+          <Text style={styles.text}>Doña Luz</Text>
         </View>
       </View>
       <View style={styles.view15}>
@@ -64,19 +72,17 @@ const JobItem = () => {
           style={styles.image7}
         />
         <View>
-          <Text>
-            Pago: Salario Minimo <br />
-            Barrio: La victoria <br />
-            Lugar: Panaderia
-            <br />
-            Contacto: 300 000 1001
-            <br />
-            Direccion: Cra 80 -34 sur{" "}
+          <Text style={styles.text}>
+            Pago: Salario Minimo {"\n"}
+            Barrio: La victoria {"\n"}
+            Lugar: Panaderia {"\n"}
+            Contacto: 300 000 1001 {"\n"}
+            Direccion: Cra 80 -34 sur
           </Text>
         </View>
       </View>
       <View style={styles.view16}>
-        <Text>Categoria</Text>
+        <Button label="Categoria" onPress={() => console.log('Categoria pressed')} />
       </View>
     </>
   );
@@ -86,91 +92,114 @@ const styles = StyleSheet.create({
   view7: {
     color: "rgba(255, 255, 255, 1)",
     fontSize: 18,
-    fontFamily: "Mitr, sans-serif",
+    fontFamily: "System",
     fontWeight: "400",
-    marginTop: 30,
-    marginLeft: 51,
+    marginTop: 10,
+    marginLeft: -110,
+    alignItems: "center", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
   },
   view8: {
     color: "rgba(255, 255, 255, 1)",
     fontSize: 15,
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "System",
     fontWeight: "400",
-    marginTop: 15,
-    marginLeft: 59,
+    marginTop: 1,
+    marginLeft: -70,
+    alignItems: "flex-start", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
   },
   view9: {
     display: "flex",
-    marginTop: 15,
+    marginTop: 1,
     marginLeft: 11,
     width: 258,
-    flexShrink: "0",
+    flexShrink: 0,
     maxWidth: "100%",
     height: 157,
+    alignItems: "center", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
   },
   view10: {
     display: "flex",
-    marginTop: 24,
-    marginLeft: 62,
-    alignItems: "stretch",
-    gap: 13,
-    fontFamily: "Inter, sans-serif",
+    marginTop: 1, // Reducir margen superior
+    marginLeft: 1,
+    alignItems: "baseline", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
+    gap: 1,
+    fontFamily: "System",
     fontSize: 16,
     color: "rgba(255, 255, 255, 1)",
     fontWeight: "400",
   },
   image4: {
-    position: "relative",
+    position: "absolute",
     display: "flex",
     width: 13,
-    flexShrink: "0",
-    aspectRatio: "0.72",
+    flexShrink: 0,
+    aspectRatio: 0.72,
+    marginLeft: -100,
   },
-  view11: { flexBasis: "auto" },
+  imageCenter: {
+    width: 200, // Ajusta el tamaño según sea necesario
+    height: 200, // Ajusta el tamaño según sea necesario
+    marginBottom: 10, // Ajusta el margen inferior según sea necesario
+  },
+  view11: {
+    flexBasis: "auto",
+    alignItems: "baseline",
+    marginLeft: -55,
+  },
   view12: {
     display: "flex",
     width: 171,
     maxWidth: "100%",
-    gap: 11,
-    fontFamily: "Inter, sans-serif",
+    gap: 1,
+    fontFamily: "System",
     fontSize: 12,
     color: "rgba(255, 255, 255, 1)",
     fontWeight: "400",
+    alignItems: "baseline", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
   },
   image5: {
     position: "relative",
     display: "flex",
     width: 18,
-    flexShrink: "0",
-    aspectRatio: "1.5",
+    flexShrink: 0,
+    aspectRatio: 1.5, // Cambiado a número
+    marginLeft: 150,
   },
   view13: { marginTop: 11 },
   view14: {
     display: "flex",
-    marginTop: 53,
-    marginLeft: 65,
-    alignItems: "stretch",
-    gap: 10,
-    fontFamily: "Inter, sans-serif",
+    marginTop: 1,
+    marginLeft: -110,
+    alignItems: "flex-start", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
+    gap: 200,
+    fontFamily: "System",
     fontSize: 16,
     color: "rgba(255, 255, 255, 1)",
     fontWeight: "400",
   },
   image6: {
-    position: "relative",
+    position: "absolute",
     display: "flex",
     width: 17,
-    flexShrink: "0",
-    aspectRatio: "1",
+    flexShrink: 0,
+    aspectRatio: 1, // Cambiado a número
+    marginLeft: -50,
   },
   view15: {
     display: "flex",
-    marginTop: 8,
+    marginTop: 1,
     width: 175,
     maxWidth: "100%",
-    alignItems: "stretch",
-    gap: 15,
-    fontFamily: "Inter, sans-serif",
+    alignItems: "baseline", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
+    gap: 10,
+    fontFamily: "System",
     fontSize: 12,
     color: "rgba(255, 255, 255, 1)",
     fontWeight: "400",
@@ -178,25 +207,32 @@ const styles = StyleSheet.create({
   image7: {
     position: "relative",
     display: "flex",
-    marginTop: 4,
+    marginTop: 1,
     width: 18,
-    flexShrink: "0",
-    aspectRatio: "1.5",
+    flexShrink: 0,
+    aspectRatio: 1.5, // Cambiado a número
+    marginLeft: 150,
+
   },
   view16: {
     borderRadius: 10,
-    marginTop: 43,
+    marginTop: 20,
     width: 159,
     maxWidth: "100%",
     paddingLeft: 50,
     paddingRight: 50,
     paddingTop: 5,
     paddingBottom: 14,
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: "System",
     fontSize: 14,
     color: "rgba(0, 0, 0, 1)",
     fontWeight: "500",
     textAlign: "center",
+    alignItems: "center", // Centrar contenido
+    justifyContent: "center", // Centrar contenido
+  },
+  text: {
+    textAlign: "left", // Centrar texto
   },
 });
 

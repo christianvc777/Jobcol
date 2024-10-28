@@ -1,3 +1,4 @@
+// SearchBar.jsx
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   view4: {
     color: "rgba(255, 255, 255, 1)",
     fontSize: 16,
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "System",
     fontWeight: "400",
     marginTop: 23,
   },
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     paddingBottom: 7,
     alignItems: "stretch",
     gap: 18,
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "System",
     fontSize: 15,
     color: "rgba(0, 0, 0, 1)",
     fontWeight: "400",
@@ -56,10 +57,10 @@ const styles = StyleSheet.create({
     display: "flex",
     marginTop: 4,
     width: 12,
-    flexShrink: "0",
-    aspectRatio: "1",
+    flexShrink: 0,
+    aspectRatio: 1, // Cambiado a número
   },
-  view6: { flexGrow: "1", flexShrink: "1", width: 225 },
+  view6: { flexGrow: 1, flexShrink: 1, width: 225 }, // Cambiado a número
 });
 
 export default SearchBar;

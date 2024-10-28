@@ -1,3 +1,4 @@
+// Footer.jsx
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
@@ -18,7 +19,7 @@ const Footer = () => {
 const styles = StyleSheet.create({
   view17: {
     display: "flex",
-    marginTop: 33,
+    marginTop: 1,
     width: "100%",
     paddingLeft: 80,
     paddingRight: 80,
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
     position: "relative",
     display: "flex",
     width: 42,
-    aspectRatio: "0.95",
+    aspectRatio: 0.95, // Cambiado a número
   },
 });
 

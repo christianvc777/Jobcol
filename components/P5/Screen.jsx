@@ -5,12 +5,12 @@ import JobSearch from './JobSearch';
 import Filters from './Filters';
 import Footer from './Footer';
 
-const P5Screen = () => {
+const P5Screen = ({ navigation }) => {
   return (
     <View style={styles.view1}>
       <Header />
       <JobSearch />
-      <Filters />
+      <Filters navigation={navigation}/>
       <Footer />
     </View>
   );

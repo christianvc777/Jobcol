@@ -2,7 +2,16 @@ import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import Button from './Button'; // Asegúrate de importar el componente Button
 
-const Filters = () => {
+const Filters = ({ navigation }) => {
+  const handleCategoryClick = () => {
+    console.log('Category clicked');
+  };
+
+  const handleNearbyClick = () => {
+    console.log('Nearby clicked');
+    navigation.navigate('P6Screen');
+  };
+
   return (
     <>
       <View style={styles.view6}>
@@ -11,12 +20,12 @@ const Filters = () => {
       <Button
         label="Categoria"
         style={styles.button}
-        onPress={() => handleCategoryClick()}
+        onPress={handleCategoryClick}
       />
       <Button
         label="Cercano a mi"
         style={styles.button}
-        onPress={() => handleNearbyClick()}
+        onPress={handleNearbyClick}
       />
       <Image
         resizeMode="contain"
@@ -27,14 +36,6 @@ const Filters = () => {
       />
     </>
   );
-};
-
-const handleCategoryClick = () => {
-  console.log('Category clicked');
-};
-
-const handleNearbyClick = () => {
-  console.log('Nearby clicked');
 };
 
 const styles = StyleSheet.create({

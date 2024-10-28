@@ -18,6 +18,7 @@ export default function App() {
         <Stack.Screen name="P3LoginScreen" component={P3LoginScreen} />
         <Stack.Screen name="P5Screen" component={P5Screen} />
         <Stack.Screen name="P6Screen" component={P6Screen} /> 
+
       </Stack.Navigator>
     </NavigationContainer>
   );

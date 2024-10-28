@@ -52,14 +52,18 @@ const styles = StyleSheet.create({
     position: "relative",
     display: "flex",
     marginTop: 4,
+    marginLeft: -200,
     width: 12,
     flexShrink: 0,
     aspectRatio: "1",
   },
   view5: { 
     flexBasis: "auto",
-    alignItems: "center", // Centrar contenido
     justifyContent: "center", // Centrar contenido
+    marginTop: -45,
+    alignItems: "center",
+    width: 225,
+
   },
   text: {
     textAlign: "center", // Centrar texto

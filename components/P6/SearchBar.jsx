@@ -58,9 +58,15 @@ const styles = StyleSheet.create({
     marginTop: 4,
     width: 12,
     flexShrink: 0,
-    aspectRatio: 1, // Cambiado a número
+    aspectRatio: 1, 
   },
-  view6: { flexGrow: 1, flexShrink: 1, width: 225 }, // Cambiado a número
+  view6: { 
+    flexGrow: 1, 
+    flexShrink: 1, 
+    marginTop: -35,
+    alignItems: "center",
+    width: 225 
+  }, 
 });
 
 export default SearchBar;

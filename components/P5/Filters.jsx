@@ -18,14 +18,14 @@ const Filters = ({ navigation }) => {
         <Text style={styles.text}>Selecciona los filtros</Text>
       </View>
       <Button
-        label="Categoria"
-        style={styles.button}
-        onPress={handleCategoryClick}
-      />
-      <Button
         label="Cercano a mi"
         style={styles.button}
         onPress={handleNearbyClick}
+      />
+      <Button
+        label="Categoria "
+        style={styles.button}
+        onPress={handleCategoryClick }
       />
       <Image
         resizeMode="contain"

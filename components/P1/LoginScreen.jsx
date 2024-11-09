@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     marginTop: 29,
   },
   createAccountButton: {
-    marginTop: 37,
+    marginTop: 15,
   },
 });
 

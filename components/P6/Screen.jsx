@@ -6,12 +6,12 @@ import SearchBar from './SearchBar';
 import JobItem from './JobItem';
 import Footer from './Footer';
 
-const P6Screen = () => {
+const P6Screen = ({ navigation }) => {
   return (
     <View style={styles.view1}>
       <Header />
       <SearchBar />
-      <JobItem />
+      <JobItem navigation={navigation}/>
       <Footer />
     </View>
   );

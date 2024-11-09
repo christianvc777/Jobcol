@@ -3,7 +3,11 @@ import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import Button from './Button'; // Importar el componente Button
 
-const JobItem = () => {
+const JobItem = ({ navigation }) => {
+  const handleOfertasClick = () => {
+    console.log('Ofertas clicked');
+    navigation.navigate('P7Screen');
+  };
   return (
     <>
       <View style={styles.view8}>
@@ -44,7 +48,7 @@ const JobItem = () => {
             Barrio: Villa de los Alpes {"\n"}
             Lugar: Restaurante {"\n"}
             Contacto: 318 435 6789 {"\n"}
-            Direccion: Cra 80 - 34 Sur
+            Dirección: Cra 80 - 34 Sur
           </Text>
         </View>
       </View>
@@ -74,12 +78,12 @@ const JobItem = () => {
             Barrio: La Victoria {"\n"}
             Lugar: Panaderia {"\n"}
             Contacto: 324 567 8901 {"\n"}
-            Direccion: Cra 10 -23 Norte
+            Dirección: Cra 10 - 23 Norte
           </Text>
         </View>
       </View>
       <View style={styles.view16}>
-        <Button label="Categoria" onPress={() => console.log('Categoria pressed')} />
+        <Button label="Ofertas" onPress={handleOfertasClick} />
       </View>
     </>
   );

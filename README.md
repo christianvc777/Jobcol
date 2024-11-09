@@ -34,6 +34,7 @@ git checkout main
 
 # Agregar archivos y hacer commit de x version
 git add .
+
 git commit -m "Initial commit"
 
 # Subir cambios al repositorio remoto usando el token de acceso personal (mio llave de acceso)

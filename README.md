@@ -37,4 +37,4 @@ git add .
 git commit -m "Initial commit"
 
 # Subir cambios al repositorio remoto usando el token de acceso personal (mio llave de acceso)
-git push https://christianvc777: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@github.com/christianvc777/Jobcol.git main
+git push https://christianvc777:clavedeltoken@github.com/christianvc777/Jobcol.git main

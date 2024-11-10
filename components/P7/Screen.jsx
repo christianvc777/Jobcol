@@ -8,9 +8,9 @@ const jobListings = [
   {
     title: 'Auxiliar de Limpieza',
     description: 'Se necesita auxiliar de limpieza para trabajar en oficinas corporativas. El horario es de lunes a sábado, 7 horas al día. Se ofrece contrato a término indefinido y prestaciones de ley.',
-    location: 'Carrera 11 #84-09 Zona T, Edificio Corporativo',
-    vacancies: 6,
-    imageJob: 'https://cdn.builder.io/api/v1/image/assets/TEMP/bd6ecc95ba1759911eac1e1dab351a563c46394572755da6033949fe1238d329?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7',
+    location: 'Carrera 11 #84-09 Zona T,               Edificio Corporativo',
+    vacancies: 3,
+    imageJob: 'https://cdn.builder.io/api/v1/image/assets/TEMP/7d67fc7f69b23cf7fb6aae39536a9f1660abccc58f55b2835984421f3073312d?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e',
   },
   {
     title: 'Asistente de Cocina',
@@ -19,9 +19,16 @@ const jobListings = [
     vacancies: 5,
     imageJob: 'https://cdn.builder.io/api/v1/image/assets/TEMP/862c18870d5e5ab0d9b0e84b94efab6931cb6381a6e27a4e7445968e43740bb6?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e',
   },
+  {
+    title: 'Cajero',
+    description: 'Se busca cajero(a) con experiencia en manejo de caja registradora y atención al cliente. Debe estar disponible para trabajar en turnos de 8 horas, 6 días a la semana, con un día de descanso.',
+    location: 'Av. Caracas #27-36, Chapinero, Supermercado Jumbo',
+    vacancies: 8,
+    imageJob: 'https://cdn.builder.io/api/v1/image/assets/TEMP/bd6ecc95ba1759911eac1e1dab351a563c46394572755da6033949fe1238d329?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7',
+  },
 ];
 
-function P7Screen() {
+function P7Screen({navigation}) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
@@ -34,7 +41,7 @@ function P7Screen() {
       {jobListings.map((job, index) => (
         <JobListing key={index} {...job} />
       ))}
-      <HomeButton />
+      <HomeButton navigation={navigation}/>
     </ScrollView>
   );
 }
@@ -47,12 +54,13 @@ const styles = StyleSheet.create({
     paddingTop: 53,
     paddingBottom: 53,
     fontFamily: 'System',
+    backgroundColor: '#4a4a4a',
   },
   headerImage: {
     width: 135,
     aspectRatio: 2.04,
     marginBottom: 20,
-    marginTop: -5,
+    marginTop: -20,
   },
 });
 

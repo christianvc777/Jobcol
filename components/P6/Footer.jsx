@@ -8,7 +8,7 @@ const Footer = () => {
       <Image
         resizeMode="contain"
         source={{
-          uri: "https://cdn.builder.io/api/v1/image/assets/TEMP/9b9e57b332f3484b20d7517db75f1ee69cc0d939a1469ef9ece5a822e6bdf6a2?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e",
+          //uri: "https://cdn.builder.io/api/v1/image/assets/TEMP/9b9e57b332f3484b20d7517db75f1ee69cc0d939a1469ef9ece5a822e6bdf6a2?placeholderIfAbsent=true&apiKey=e1d1830b4a5549ae817c3c03080dce7e",
         }}
         style={styles.image8}
       />

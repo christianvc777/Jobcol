@@ -1,15 +1,14 @@
-// HomeButton.jsx
+// PremiumButton.jsx
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-const HomeButton = ({ navigation }) => {
+const PremiumButton = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate('P8Screen');
-  };
-
+    navigation.navigate('P10Screen');
+  }
   return (
     <TouchableOpacity style={styles.button} onPress={handlePress}>
-      <Text style={styles.buttonText}>Postulate</Text>
+      <Text style={styles.buttonText}>Premium</Text>
     </TouchableOpacity>
   );
 };
@@ -25,6 +24,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 20,
+    alignSelf: 'center',
   },
   buttonText: {
     color: '#000000',
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeButton;
+export default PremiumButton;

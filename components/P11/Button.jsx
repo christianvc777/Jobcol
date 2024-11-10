@@ -1,15 +1,15 @@
-// HomeButton.jsx
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-const HomeButton = ({ navigation }) => {
+const Button = ({ navigation }) => {
   const handlePress = () => {
-    navigation.navigate('P8Screen');
+    console.log('Inicio pressed');
+    navigation.navigate('P9Screen');
   };
 
   return (
     <TouchableOpacity style={styles.button} onPress={handlePress}>
-      <Text style={styles.buttonText}>Postulate</Text>
+      <Text style={styles.buttonText}>Inicio</Text>
     </TouchableOpacity>
   );
 };
@@ -21,10 +21,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingVertical: 10,
     minHeight: 40,
-    width: 133,
+    width: 150,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 45,
+    alignSelf: 'center',
   },
   buttonText: {
     color: '#000000',
@@ -36,4 +37,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeButton;
+export default Button;

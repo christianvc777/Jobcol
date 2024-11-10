@@ -32,6 +32,9 @@ git branch
 # Cambiar a la rama principal (si es necesario)
 git checkout main
 
+# Integrar cambios remotos (opcional)
+git pull origin main
+
 # Agregar archivos y hacer commit de x version
 git add .
 

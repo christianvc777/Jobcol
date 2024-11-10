@@ -2,7 +2,7 @@
 
 https://expo.dev/preview/update?message=JobCol%209.0&updateRuntimeVersion=1.0.0&createdAt=2024-11-10T00%3A56%3A19.704Z&slug=exp&projectId=729f4a6f-a1e5-4023-a088-f34ca0109e02&group=69edb3fa-009f-4595-b78c-5e8c56cbb470
 
-Nota: Descargar Expo Go en Android o iOS
+Nota: Descargar Expo Go en Android 
 
 ### Hacer commit a Expo Dev
 
